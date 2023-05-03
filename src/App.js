@@ -14,7 +14,7 @@ export default function App() {
           This project was coded by Bruna Gabriel and is{" "}
           <a
             href="https://github.com/BrunaGabriel/react-weather-app"
-            target="_blank"
+            target="_blank" 
           >
             opoen-sourced on GitHub
           </a>
