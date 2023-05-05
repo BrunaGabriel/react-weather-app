@@ -11,12 +11,9 @@ export default function App() {
 
         <footer>
           This project was coded by{" "}
-          <a href="https://github.com/BrunaGabriel" target="_blank">Bruna Gabriel </a>
+          <a href="https://github.com/BrunaGabriel">Bruna Gabriel </a>
           and is{" "}
-          <a
-            href="https://github.com/BrunaGabriel/react-weather-app"
-            target="_blank"
-          >
+          <a href="https://github.com/BrunaGabriel/react-weather-app">
             opoen-sourced on GitHub
           </a>
         </footer>
