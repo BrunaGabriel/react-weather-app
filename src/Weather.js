@@ -4,45 +4,45 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather(props) {
-  const [city, setCity]=useState (props.defaultCity);
-  const [weatherData, setweatherData] = useState({ ready: false });
+  const [weatherData, setWeatherData] = useState({ ready: false });
+  const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    setweatherData({
+    setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
-      date: new Date (response.data.dt*1000),
-      description: response.date.weather[0].description,
+      date: new Date(response.data.dt * 1000),
+      description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
       city: response.data.name,
     });
   }
-  function search(){
+  function search() {
     const apiKey = "eae061c95483dd066657bfc7525418ed";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
-
   }
-  function handleSubmit(event){
-    event.preventDefault ();//Search for a city 
-    search();   
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
   }
 
-  function handleCityChange(event){
+  function handleCityChange(event) {
     setCity(event.target.value);
   }
 
   if (weatherData.ready) {
     return (
-      <div className="weather">
-        <form onSubmit={handleSubmit} >
+      <div className="Weather">
+        <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-9">
               <input
                 type="search"
-                placeholder="Enter a city"
+                placeholder="Enter a city.."
                 className="form-control"
                 autoFocus="on"
                 onChange={handleCityChange}
@@ -57,12 +57,11 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <WeatherInfo data={weatherData}/>
-        
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
     search();
-    return "loading";
+    return "Loading...";
   }
 }
