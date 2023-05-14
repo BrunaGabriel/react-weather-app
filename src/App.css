@@ -1,12 +1,18 @@
-.App{
-    max-width: 600px;
-    margin: 20px auto 450px auto;
-    font-family:  "Bahnschrift Light", sans-serif;
-    
-
-    
+.App {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: "Bahnschrift Light", sans-serif;
 }
-.App footer{
-    font-size: 11px;
-    margin: 10px 0;}
-    
+.App footer {
+  font-size: 11px;
+  margin: 10px 0;
+  color: #e0e1e2;
+}
+
+.App .link {
+    color: #e0e1e2;
+}
+.App .F{
+   color: rgb(33, 33, 33);
+   
+}

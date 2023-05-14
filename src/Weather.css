@@ -1,23 +1,25 @@
 .Weather {
-  font-family:  "Bahnschrift Light", sans-serif;
-  color: rgb(135, 135, 135);
-
+  font-family: "Bahnschrift Light", sans-serif;
+  color: rgb(221, 212, 212);
+  
 }
-.Weather .Weather1{
+.Weather .Weather1 {
   padding: 16px;
-  border: 1px solid #c7cbcf;
+  border: 1px solid #96999c;
   border-radius: 4px;
+  
 }
-.Weather .Weather2{
-  padding: 16px ;
-  border: 1px solid #c7cbcf;
+
+.Weather .Weather2 {
+  padding: 16px;
+  border: 1px solid #96999c;
   border-radius: 4px;
   margin-top: 5px;
 }
-.Weather .form-control{
-  opacity: 0.75;
+.Weather .form-control {
+  opacity: 0.5;
 }
-.Weather .btn{
+.Weather .btn {
   opacity: 0.7;
 }
 .Weather h1 {
