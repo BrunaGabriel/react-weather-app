@@ -1,0 +1,14 @@
+h2 {
+  font-family: "Bahnschrift Light", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  padding-top:100px;
+  
+}
+body{
+    background-image: url(./images/weather.jpeg) ;
+    background-size: 100%;
+    
+   
+    
+}

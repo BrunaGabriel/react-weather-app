@@ -1,32 +1,45 @@
-.weather {
-  font-family: Arial, Helvetica, sans-serif;
+.Weather {
+  font-family:  "Bahnschrift Light", sans-serif;
   color: rgb(135, 135, 135);
 
+}
+.Weather .Weather1{
   padding: 16px;
-  border: 1px solid #dadde1;
+  border: 1px solid #c7cbcf;
   border-radius: 4px;
 }
-
-.weather h1 {
+.Weather .Weather2{
+  padding: 16px ;
+  border: 1px solid #c7cbcf;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.Weather .form-control{
+  opacity: 0.75;
+}
+.Weather .btn{
+  opacity: 0.7;
+}
+.Weather h1 {
   font-size: 24px;
   font-weight: 100;
   line-height: 29px;
   margin: 20px 0 0 0;
 }
-.weather ul {
+.Weather ul {
   margin: 0;
   padding: 0;
 }
-.weather li {
+.Weather li {
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
   list-style: none;
 }
-.weather canva {
+.Weather canva {
   margin-top: 5px auto;
 }
-.weather .temperature {
+.Weather .temperature {
   font-weight: bold;
   color: rgb(33, 33, 33);
   font-size: 64px;
@@ -34,7 +47,7 @@
   font-weight: 400;
   margin-left: 5px;
 }
-.weather .unit {
+.Weather .unit {
   color: rgb(33, 33, 33);
   font-size: 16px;
   font-weight: 400;
