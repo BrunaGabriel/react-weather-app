@@ -1,6 +1,6 @@
 .Weather {
   font-family: "Bahnschrift Light", sans-serif;
-  color: rgb(221, 212, 212);
+  color: #f8e8e8;
   
 }
 .Weather .Weather1 {
@@ -23,7 +23,7 @@
   opacity: 0.7;
 }
 .Weather h1 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 100;
   line-height: 29px;
   margin: 20px 0 0 0;
